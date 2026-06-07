@@ -137,7 +137,7 @@
   <!-- filterMinCF + filterBeta = One Euro Filter for smooth tracking -->
   <!-- missTolerance = frames before targetLost fires (stops flicker) -->
   <!-- warmupTolerance = frames before targetFound fires (stops false triggers) -->
-  <a-scene mindar-image="imageTargetSrc: ./targets.mind; filterMinCF: 0.001; filterBeta: 1000; missTolerance: 10; warmupTolerance: 5;"
+  <a-scene mindar-image="imageTargetSrc: ./targets.mind; filterMinCF: 0.01; filterBeta: 5000; missTolerance: 10; warmupTolerance: 5;"
            vr-mode-ui="enabled: false"
            device-orientation-permission-ui="enabled: false">
     <a-assets>
@@ -161,7 +161,7 @@
       <a-image class="side-img" id="side-top-left" src="top1.jpeg" position="0 0 -0.1" width="0.38" height="0.38" material="opacity: 0"></a-image>
       <a-image class="side-img" id="side-top-right" src="top2.jpeg" position="0 0 -0.1" width="0.38" height="0.38" material="opacity: 0"></a-image>
       <!-- WhatsApp 3D model -->
-      <a-entity class="side-img" id="whatsapp-btn" position="0.2 -0.50 0.04">
+      <a-entity class="side-img" id="whatsapp-btn" position="0.2 -0.60 0.04">
         <a-entity id="whatsapp-model-entity" gltf-model="#whatsapp-model" scale="-0.4 -0.4 0.4" rotation="0 180 -90" model-opacity="opacity: 0"></a-entity>
       </a-entity>
       <!-- Video panel -->
@@ -215,7 +215,7 @@
       'side-right':     '0 0 -0.1',
       'side-top-left':  '0 0 -0.1',
       'side-top-right': '0 0 -0.1',
-      'whatsapp-btn':   '0.2 -0.50 0.04',
+      'whatsapp-btn':   '0.2 -0.60 0.04',
       'wa-video':       '0.75 0 0.03'
     };
 
